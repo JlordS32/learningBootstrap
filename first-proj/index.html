@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Learning Bootstrap</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<style>
+		.box {
+			background-color: lightblue;
+			font-size: 1.2rem;
+			padding: 15px;
+         width: 100px;
+         aspect-ratio: 1 / 1;
+         margin: 1px;
+		}
+	</style>
+	<body>
+		<!-- NAVBAR -->
+
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<div class="container">
+				<a
+					href="#"
+					class="navbar-brand"
+					>Brand</a
+				>
+				<button
+					class="navbar-toggler"
+					data-bs-toggle="collapse"
+					data-bs-target="#nav"
+					aria-controls="nav"
+					aria-label="Expand Navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="nav"
+				>
+					<ul class="navbar-nav">
+						<li>
+							<a
+								href="#"
+								class="nav-link active"
+								aria-current="page"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="nav-link"
+								>About</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			
+         <div class="d-flex justify-content-between flex-wrap border border-1 border-dark p-5 mt-5 mb-5 position-relative">
+            <div class="box position-absolute" style="background-color: red;"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+         </div>
+         <div class="d-flex justify-content-between flex-wrap border border-1 border-dark p-5 mt-5 mb-5">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+         </div>
+         
+         
+         <!-- <div class="card">
+            <div class="card-body text-bg-dark">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe earum repellat quos aspernatur consequatur nam magnam qui, quis hic aperiam ipsa possimus necessitatibus veniam dignissimos dolores vitae aliquid recusandae. Aut!
+            </div>
+            <div class="vstack gap-3">
+               <div class="box"></div>
+               <div class="box"></div>
+               <div class="box"></div>
+               <div class="box"></div>
+            </div>
+            <div class="border-5 border-primary border-start border-end">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum harum ipsa nulla doloribus quia vel veritatis veniam accusamus, quis mollitia vitae, exercitationem illo sit, sequi repellat nobis aspernatur id laboriosam!
+            </div>
+         </div> -->
+
+			<!-- ACCORDION -->
+			<!-- <button
+				class="btn btn-primary"
+				data-bs-toggle="collapse"
+				data-bs-target="#row"
+				aria-expanded="true"
+				aria-controls="row"
+			>
+				Toggle
+			</button>
+
+			<div
+				class="row collapse show"
+				id="row"
+			>
+				<div class="col">
+					<div class="box">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+						recusandae molestiae facilis sed provident doloremque odit vitae.
+					</div>
+				</div>
+			</div> -->
+
+			<!-- MODAL -->
+			<!-- <div class="modal fade modal-lg" id="modal">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h1>Header</h1>
+                     <button class="btn btn-close btn-danger" data-bs-dismiss="modal" data-bs-target="#modal"></button>
+                  </div>
+                  <div class="modal-body">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptatem magnam rem magni tempore nesciunt tempora, sunt eius perspiciatis, saepe quis consequatur voluptates a optio quas omnis? Tenetur, magni sit.
+
+                     lorem1000
+                  </div>
+                  <div class="modal-footer">
+                     Copyright 
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Open my shit</button> -->
+
+			<!-- CARD -->
+			<!-- <div class="card-group">
+				<div
+					class="card"
+					style="width: 300px"
+				>
+					<h2 class="card-header">Header</h2>
+					<div class="card-body">
+						<h2 class="card-title">Shit</h2>
+						<span class="card-subtitle">I like shits</span>
+						<div class="card-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+							neque tenetur fugit ratione minus! Accusamus consequuntur magnam
+							omnis odit et perspiciatis molestias vel quos sed, eaque natus
+							quaerat illo velit!
+						</div>
+					</div>
+					<div class="card-footer">Footer</div>
+				</div>
+				<div
+					class="card"
+					style="width: 300px"
+				>
+					<h2 class="card-header">Header</h2>
+					<div class="card-body">
+						<h2 class="card-title">Shit</h2>
+						<span class="card-subtitle">I like shits</span>
+						<div class="card-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+							neque tenetur fugit ratione minus! Accusamus consequuntur magnam
+							omnis odit et perspiciatis molestias vel quos sed, eaque natus
+							quaerat illo velit!
+						</div>
+					</div>
+					<div class="card-footer">Footer</div>
+				</div>
+				<div
+					class="card"
+					style="width: 300px"
+				>
+					<h2 class="card-header">Header</h2>
+					<div class="card-body">
+						<h2 class="card-title">Shit</h2>
+						<span class="card-subtitle">I like shits</span>
+						<div class="card-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+							neque tenetur fugit ratione minus! Accusamus consequuntur magnam
+							omnis odit et perspiciatis molestias vel quos sed, eaque natus
+							quaerat illo velit!
+						</div>
+					</div>
+					<div class="card-footer">Footer</div>
+				</div>
+			</div> -->
+
+			<!-- ALERT -->
+			<!-- <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <h1>Alert</h1>
+            <a href="#" class="alert-link">Find more</a>
+            <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
+         </div> -->
+
+			<!-- BUTTONS -->
+			<!-- <div class="btn-group-vertical btn-group-lg">
+				<button class="btn btn-primary">Default</button>
+				<button
+					class="btn btn-success"
+					disabled
+				>
+					I am disabled
+				</button>
+				<button
+					class="btn btn-outline-danger active"
+					aria-pressed="true"
+					data-bs-toggle="button"
+				>
+					Active state, toggle
+				</button>
+				<button class="btn btn-outline-primary btn-lg">Test</button>
+			</div> -->
+
+			<!-- FORM -->
+			<!-- <div class="table-responsive">
+				<form novalidate>
+					<div class="form-floating">
+						<input
+							type="text"
+							id="text"
+							class="form-control"
+							placeholder="Enter a value"
+							required
+						/>
+						<label
+							for="text"
+							class="form-label"
+							>Email</label
+						>
+                  <div class="invalid-feedback">Fuck you</div>
+                  <div class="valid-feedback">Nice uwu</div>
+					</div>
+					<button
+						type="submit"
+						class="btn btn-primary"
+					>
+						Submit
+					</button>
+				</form>
+			</div> -->
+		</div>
+	</body>
+	<!-- <script>
+		const form = document.querySelector('form');
+
+		form.addEventListener('submit', (e) => {
+			if (!form.checkValidity()) {
+				e.preventDefault();
+			}
+
+			form.classList.add('was-validated');
+		});
+	</script> -->
+</html>
