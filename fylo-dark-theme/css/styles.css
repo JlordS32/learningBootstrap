@@ -1,0 +1,153 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+	/* Colors */
+	--primary-intro: hsl(217, 28%, 15%);
+	--primary-main: hsl(218, 28%, 13%);
+	--primary-footer: hsl(216, 53%, 9%);
+	--primary-testimonials: hsl(219, 30%, 18%);
+	--accent-cyan: hsl(176, 68%, 64%);
+	--accent-blue: hsl(198, 60%, 50%);
+	--error: hsl(0, 100%, 63%);
+	--neutral-white: hsl(0, 0%, 100%);
+
+	/* Typography */
+	--font-size: 14px;
+	--call-to-actions-family: 'Raleway', sans-serif;
+	--call-to-actions-weights: 400, 700;
+	--body-family: 'Open Sans', sans-serif;
+	--body-weights: 400, 700;
+
+	font-family: var(--body-family);
+	font-weight: var(--font-size);
+	font-weight: var(--body-weights);
+
+	background-color: var(--primary-intro);
+}
+
+nav ul li a {
+   font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+   color: var(--neutral-white) !important;
+}
+
+main section:not(section:first-child) {
+   background-color: var(--primary-main)
+}
+
+main section:first-child {
+   background-image: url(../images/bg-curvy-desktop.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: bottom;
+   padding-bottom: 13rem;
+}
+
+main section:first-child .call-to-action {
+	background: linear-gradient(to right, var(--accent-cyan), var(--accent-blue));
+	color: var(--natural-white);
+	font-family: var(--call-to-actions-family);
+	font-weight: 700;
+	border-radius: 100px;
+   transition: all 150ms ease-in;
+}
+
+main section:first-child .call-to-action:hover {
+   cursor: pointer;
+   background: linear-gradient(to right, var(--accent-cyan), var(--accent-cyan));
+}
+
+main section:first-child .call-to-action:focus {
+   border: 0;
+   outline: 0;
+}
+
+main section:first-child div > h1 {
+   font-size: 2rem; 
+   width: clamp(320px, 90%, 620px);
+}
+
+main section:first-child div > p {
+   width: clamp(320px, 90%, 500px);
+}
+
+main .box {
+   height: 150px;
+   background-color: red;
+}
+
+main section:nth-child(2) .product {
+   gap: 1rem;
+   margin-bottom: 5rem;
+   font-size: 0.9rem;
+}
+
+main section:nth-child(2) .product > p {
+   padding: 0 5rem;
+}
+
+main section:nth-child(2) .product > h2 {
+   font-size: 1.2rem;
+}
+
+main section:nth-child(4) {
+   background-color: var(--primary-testimonials);
+}
+
+main section:nth-child(4) .col > .review-card {
+   padding-top: 1rem;
+   background-color: var(--primary-testimonials);
+   color: var(--neutral-white);
+   z-index: 2;
+}
+
+main section:nth-child(4) .col > .review-card .card-footer {
+   background-color: var(--primary-testimonials);
+   border: 0;
+}
+
+main section:nth-child(4) .review-card-footer div > div:last-child {
+   opacity: 0.3;     
+   font-size: 0.8rem;
+}
+
+main section:nth-child(4) .img-container {
+   top: -15%;
+   left: 5%;
+}
+
+footer {
+   background-color: var(--primary-footer);
+   color: var(--neutral-white);
+   padding-top: 10rem;
+   padding-bottom: 3rem;
+}
+
+footer p {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+footer a {
+   color: var(--natural-white);
+}
+
+footer ul {
+   padding: 0;
+}
+
+footer ul li {
+   list-style-type: none;
+}
+
+::-webkit-scrollbar {
+   width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: var(--primary-footer);
+}
